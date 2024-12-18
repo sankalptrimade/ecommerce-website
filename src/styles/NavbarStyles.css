@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Chathura:wght@100;300;400;700;800&display=swap');
+
+nav{
+    background-color: black;
+    font-family: "Chathura", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px;
+    color: white;
+}
+.navbar-child-1 {
+    /* border: 2px solid red; */
+    width: 114rem;
+    margin: 0px auto;
+}
+
+.navbar-list {
+    list-style: none;
+    /* border: 2px solid green; */
+    width: 32rem;
+    height: 2.5rem;
+}
+
+.navbar-list a {
+    color: white;
+    
+}
