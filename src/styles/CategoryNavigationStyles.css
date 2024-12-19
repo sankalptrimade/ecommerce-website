@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.categories{
+    height: 2.5rem;
+    background-color: #E8E8E8;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.categoryList{
+    list-style: none;
+    padding: 0px;
+    width: 30rem;
+    margin-left: 45px;
+    margin-bottom: 0px;
+    /* border: 2px solid red; */
+
+}
+
+.categoryList :hover{
+    color: #751FFF;
+}
+
+.a-categoryListItems{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
