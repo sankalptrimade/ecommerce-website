@@ -7,17 +7,16 @@ nav{
     font-style: normal;
     font-size: 26px;
     color: white;
+    height: 5rem;
 }
 .navbar-child-1 {
-    /* border: 2px solid red; */
     width: 114rem;
     margin: 0px auto;
 }
 
 .navbar-list {
     list-style: none;
-    /* border: 2px solid green; */
-    width: 32rem;
+    width: 27rem;
     height: 2.5rem;
 }
 

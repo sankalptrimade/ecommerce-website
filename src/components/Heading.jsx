@@ -21,14 +21,9 @@ const Heading = () => {
         </div>
         <div className="title-child-2">
             <div className="users">
-                {/* <ul className="users-list d-flex justify-content-end align-items-center" style={{listStyle: "none"}}>
-                    <li className="users-list-item"><a href="/"><FaUserCircle /><span className="login-span">Login</span></a></li>
-                    <li className="users-list-item"><a href="/"><GrFavorite /></a></li>
-                    <li className="users-list-item"><a href="/"><BsCart2 /></a></li>
-                </ul> */}
-                <p className="userslist"><a href="/"><FaUserCircle /><span className="login-span">Login</span></a></p>
-                <p className="userslist"><a href="/"><GrFavorite /></a></p>
-                <p className="userslist"><a href="/"><BsCart2 /></a></p>
+                <p><a className="userslist" href="/"><span className="login-logo"><FaUserCircle /></span><span className="login-span">Log In</span></a></p>
+                <p><a className="userslist" href="/"><span className="favorite-logo"><GrFavorite /></span></a></p>
+                <p><a className="userslist" href="/"><span className="cart-logo"><BsCart2 /></span></a></p>
             </div>
 
         </div>
