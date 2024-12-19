@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import Navbar from './components/Navbar'
 import Heading from './components/Heading'
 import CategoryNavigation from './components/CategoryNavigation'
+import ImageSlider from './components/ImageSlider'
 
 
 createRoot(document.getElementById('root')).render(
@@ -10,5 +11,6 @@ createRoot(document.getElementById('root')).render(
     <Navbar />
     <Heading />
     <CategoryNavigation />
+    <ImageSlider />
   </StrictMode>,
 )
