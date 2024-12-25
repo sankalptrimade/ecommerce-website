@@ -6,7 +6,7 @@ import image2 from "./../images/CardImg2.png";
 const InfoImage = () => {
   return (
     <div>
-      <div className="cardImage-parent d-flex justify-content-around align-items-center">
+      <div className="cardImage-parent d-flex justify-content-between">
         <div className="image1">
           <img src={image1} alt="image1" />
           <div className="image1-text">
