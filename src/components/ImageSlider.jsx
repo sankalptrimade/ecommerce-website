@@ -11,31 +11,35 @@ const ImageSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000);
-
+    }, 3000);
     return () => clearInterval(interval);
   }, [images.length]);
 
   return (
-    <div className="slider-parent">
-      <div className="slider">
-        {images.map((src, index) => (
-          <img
-            key={index}
-            src={src}
-            alt={`Image ${index + 1}`}
-            className={index === currentIndex ? "active" : ""}
-          />
-        ))}
-      </div>
-      <div className="imageText">
-        <p className="badgeText">Best Prices</p>
-        <p className="text1">Incredible Prices on All Your Favorite Items</p>
-        <p className="text2">Get more for less on selected brands</p>
-        <button className="btn-shopNow">Shop Now</button>
+    <div>
+      <div className="imageSliderparent">
+        <div className="imageSlider">
+          {images.map((src, index) => {
+            return (
+              <img
+                key={index}
+                src={src}
+                alt={`image${index + 1}`}
+                className={index === currentIndex ? "active" : ""}
+              />
+            );
+          })}
+        </div>
+        <div className="imageText">
+          <p className="badgeText">Best Prices</p>
+          <p className="text1">Incredible Prices on All Your Favorite Items</p>
+          <p className="text2">Get more for less on selected brands</p>
+          <button className="btn-shopNow">Shop Now</button>
+        </div>
       </div>
     </div>
   );
 };
 
 export default ImageSlider;
+
