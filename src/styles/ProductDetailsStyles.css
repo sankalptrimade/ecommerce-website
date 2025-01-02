@@ -2,10 +2,10 @@
     background-color: #E8E8E8;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 200vh;
 }
 
 .cardsImage {
@@ -17,4 +17,11 @@
     width: 114rem;
     height: 190px;
     background-color: white;
+}
+
+.categoryShoppingList{
+    width: 114rem;
+    height: 30rem;
+    background-color: white;
+    /* border: 2px solid red; */
 }

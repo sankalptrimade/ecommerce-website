@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+PhagsPa&display=swap');
+
+.category-parent {
+    height: 30rem;
+    width: 114rem;
+}
+
+.heading-text p {
+    margin: 40px 0px;
+    font-size: 25px;
+    font-family: "Noto Sans PhagsPa", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.category {
+    display: flex;
+    flex-direction: row;
+    height: 22rem;
+}
+
+.category-list {
+    width: 38rem;
+    flex-direction: column;
+}
+
+.category-list p {
+    margin-top: 15px;
+    font-family: "Noto Sans PhagsPa", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.category-list-items img {
+    width: 18.43rem;
+    height: 18.43rem;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.category-list-items img:hover {
+    transform: scale(1.1);
+    outline: none;
+    cursor: pointer;
+}
