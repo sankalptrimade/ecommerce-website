@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+PhagsPa&display=swap');
 
 .category-parent {
-    height: 30rem;
+    height: 68rem;
     width: 114rem;
+    /* border: 2px solid red; */
 }
 
 .heading-text p {
@@ -17,11 +18,13 @@
     display: flex;
     flex-direction: row;
     height: 22rem;
+    /* border: 2px solid; */
 }
 
 .category-list {
     width: 38rem;
     flex-direction: column;
+    /* border: 2px solid green; */
 }
 
 .category-list p {
@@ -42,4 +45,98 @@
     transform: scale(1.1);
     outline: none;
     cursor: pointer;
+}
+
+.bgImg {
+    margin-top: 8px;
+    width: 114rem;
+    height: 37.5rem;
+    background-color: white;
+    /* border: 2px solid darkblue; */
+    position: relative;
+    display: flex;
+}
+
+.bgImg img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 37.5rem;
+    width: 114rem;
+    clip-path: polygon(0 0,
+            1216px 0,
+            1316px 100%,
+            0 100%);
+    object-fit: cover;
+}
+
+.bgImg-text{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 608px;
+    height: 600px;
+}
+
+.image-text{
+    width: 15rem;
+    height: 25rem;
+    font-family: "Noto Sans PhagsPa", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.text-1{
+    font-size: 25px;
+}
+
+.text-2{
+    font-size: 80px;
+}
+
+.text-3{
+    font-size: 25px;
+}
+
+.text-4{
+    font-size: 15px;
+    font-family: "Noto Sans PhagsPa", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.shop-btn{
+    width: 166px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #751FFF;
+    color: white;
+    border: none;
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 3.5rem;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.shop-btn:hover{
+    background-color: white;
+    color: #751FFF;
+    border: 1px solid #751FFF;
+}
+
+.rounded-text{
+    position: absolute;
+    right: 510px;
+    top: 63px;
+    width: 161px;
+    height: 161px;
+    border-radius: 50%;
+    background-color: #D72D2D;
+    color: white;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    transform: rotate(20deg);
 }
