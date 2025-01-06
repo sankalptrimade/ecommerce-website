@@ -46,7 +46,7 @@ const ShopCategoryList = () => {
             </div>
           </div>
           <p className="rounded-text d-flex align-items-center justify-content-center">
-            Best Price
+            Best<br />Price
           </p>
         </div>
       </div>

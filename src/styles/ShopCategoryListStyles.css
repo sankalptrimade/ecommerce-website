@@ -3,7 +3,6 @@
 .category-parent {
     height: 68rem;
     width: 114rem;
-    /* border: 2px solid red; */
 }
 
 .heading-text p {
@@ -18,13 +17,11 @@
     display: flex;
     flex-direction: row;
     height: 22rem;
-    /* border: 2px solid; */
 }
 
 .category-list {
     width: 38rem;
     flex-direction: column;
-    /* border: 2px solid green; */
 }
 
 .category-list p {
@@ -52,7 +49,6 @@
     width: 114rem;
     height: 37.5rem;
     background-color: white;
-    /* border: 2px solid darkblue; */
     position: relative;
     display: flex;
 }

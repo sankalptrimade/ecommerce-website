@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+.comingSoonComponent-parent{
+    width: 114rem;
+    height: 37.5rem;
+    background-color: white;
+    position: relative;
+}
+
+.droneImg-text{
+    width: 517px;
+    height: 600px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding-top: 104px;
+    padding-left: 60px;
+}
+
+.badge-text{
+    width: 155px;
+    height: 28px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #D72D2D;
+    color: white;
+    font-family: "Assistant", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.droneImg-text-1{
+    font-size: 30px;
+    font-family: "Assistant", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.first-text{
+    color: #751FFF;
+}
+
+.droneImg-text-2{
+    font-size: 100px;
+    font-family: "Assistant", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.droneImg-text-3{
+    font-size: 30px;
+    font-family: "Assistant", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.droneImg-text-4{
+    font-size: 18px;
+    font-family: "Assistant", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+
+.droneImg img{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 114rem;
+    height: 37.7rem;
+    object-fit: cover;
+    clip-path: polygon(517px 0%, 100% 0%, 100% 100%, 617px 100%)
+}
+
+.droneImg-shop-btn{
+    width: 166px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #751FFF;
+    color: white;
+    border: none;
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 3.5rem;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.droneImg-shop-btn:hover{
+    background-color: white;
+    color: #751FFF;
+    border: 1px solid #751FFF;
+}
