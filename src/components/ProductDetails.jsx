@@ -4,6 +4,7 @@ import InfoImage from "./InfoImage";
 import ServiceProvided from "./ServiceProvided";
 import ShopCategoryList from "./ShopCategoryList";
 import ComingSoonComponent from "./ComingSoonComponent";
+import BrandsComponent from "./BrandsComponent";
 
 
 const ProductDetails = () => {
@@ -20,6 +21,9 @@ const ProductDetails = () => {
       </div>
       <div className="ComingSoonPage">
         <ComingSoonComponent />
+      </div>
+      <div className="brandsPage">
+        <BrandsComponent />
       </div>
     </div>
   );
