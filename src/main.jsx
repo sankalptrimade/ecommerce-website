@@ -6,6 +6,7 @@ import CategoryNavigation from './components/CategoryNavigation'
 import ImageSlider from './components/ImageSlider'
 import ProductDetails from './components/ProductDetails'
 import HelpCenterComponent from './components/helpCenterComponent'
+import FooterComponent from './components/FooterComponent'
 
 
 createRoot(document.getElementById('root')).render(
@@ -16,5 +17,6 @@ createRoot(document.getElementById('root')).render(
     <ImageSlider />
     <ProductDetails />
     <HelpCenterComponent />
+    <FooterComponent />
   </StrictMode>,
 )

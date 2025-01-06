@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.footer {
+    width: 100%;
+    height: 42rem;
+}
+
+.footer-parent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 25rem;
+}
+
+.footer-heading {
+    font-size: 20px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 3rem;
+}
+
+.storeLocation-text {
+    font-size: 16px;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.9;
+}
+
+.socialmedia-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 8rem;
+    height: 1.3rem;
+}
+
+.customerSupport-list {
+    list-style: none;
+    padding: 0px;
+}
+
+.customerSupport-list li {
+    margin-bottom: 10px;
+}
+
+.customerSupport-list li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.customerSupport-list li a:hover {
+    color: #751FFF;
+}
+
+.policy-list {
+    list-style: none;
+    padding: 0px;
+}
+
+.policy-list li {
+    margin-bottom: 10px;
+}
+
+.policy-list li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.policy-list li a:hover {
+    color: #751FFF;
+}
+
+.payment-method {
+    width: 100%;
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-method-text p {
+    margin-bottom: 3rem;
+    font-size: 14px;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.card-payment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 2.2rem;
+    width: 43%;
+}
+
+.copyright-text{
+    width: 100%;
+    height: 47px;
+    padding-top: 12px;
+    text-align: center;
+    font-size: 17px;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: #E8E8E8;
+}
