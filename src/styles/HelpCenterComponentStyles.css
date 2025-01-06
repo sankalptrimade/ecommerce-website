@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.helpCenterComponent-parent{
+    position: relative;
+    width: 118.9rem;
+    height: 27.8rem;
+    background-color: black;
+    color: white;
+}
+
+.helpCenter-text{
+    position: absolute;
+    left: 245px;
+    top: 112px;
+}
+
+.helpCenter-textbox{
+    width: 27rem;
+    height: 13.6rem;
+}
+
+.helpCenter-textbox h2{
+    font-size: 25px;
+    font-family: "Public Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.helpCenter-textbox p{
+    font-size: 17px;
+    font-family: "Public Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.helpCenter-image img{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    object-fit: cover;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 140px 100%);
+}
+
+.helpCenter-btn{
+    width: 166px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: white;
+    color: #751FFF;
+    border: 1px solid #751FFF;
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.helpCenter-btn:hover{
+    background-color: #751FFF;
+    color: white;
+    border: 1px solid white;
+}
