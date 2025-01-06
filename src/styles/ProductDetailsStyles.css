@@ -27,10 +27,14 @@
 .ComingSoonPage{
     width: 114rem;
     height: 37.5rem;
-    background-color: red;
 }
 
 .brandsPage{
     width: 114rem;
     height: 25.313rem;
+}
+
+.Newsletterpage{
+    width: 114rem;
+    height: 20rem;
 }
