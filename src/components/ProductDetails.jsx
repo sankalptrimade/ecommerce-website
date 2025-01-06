@@ -6,7 +6,6 @@ import ShopCategoryList from "./ShopCategoryList";
 import ComingSoonComponent from "./ComingSoonComponent";
 import BrandsComponent from "./BrandsComponent";
 import NewsletterComponent from "./NewsletterComponent";
-import HelpCenterComponent from "./helpCenterComponent";
 
 
 const ProductDetails = () => {
@@ -29,9 +28,6 @@ const ProductDetails = () => {
       </div>
       <div className="Newsletterpage">
         <NewsletterComponent />
-      </div>
-      <div className="helpCenter">
-        <HelpCenterComponent />
       </div>
     </div>
   );

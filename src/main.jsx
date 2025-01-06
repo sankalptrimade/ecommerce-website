@@ -4,8 +4,8 @@ import Navbar from './components/Navbar'
 import Heading from './components/Heading'
 import CategoryNavigation from './components/CategoryNavigation'
 import ImageSlider from './components/ImageSlider'
-// import InfoImage from './components/InfoImage'
 import ProductDetails from './components/ProductDetails'
+import HelpCenterComponent from './components/helpCenterComponent'
 
 
 createRoot(document.getElementById('root')).render(
@@ -14,7 +14,7 @@ createRoot(document.getElementById('root')).render(
     <Heading />
     <CategoryNavigation />
     <ImageSlider />
-    {/* <InfoImage /> */}
     <ProductDetails />
+    <HelpCenterComponent />
   </StrictMode>,
 )
