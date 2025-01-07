@@ -17,7 +17,7 @@ const HelpCenterComponent = () => {
           </div>
         </div>
         <div className="helpCenter-image">
-          <img src={bgImage} alt="bgImage" srcset="" />
+          <img src={bgImage} alt="bgImage" />
         </div>
       </div>
     </div>

@@ -32,13 +32,28 @@
     font-style: normal;
 }
 
-.form-control{
+.email-text:after {
+    content:" *";
+    color: white;
+  }
+
+.email-text-input[type="email"]{
     width: 37.813rem;
     height: 45px;
     background-color: #751FFF;
     border: 1px solid white;
     border-radius: 23px;
     color: white;
+}
+
+.email-text-input:hover{
+    background-color: #491799;
+}
+
+.email-text-input:focus{
+    background-color: #751FFF;
+    color: white;
+    border: 1px solid white;
 }
 
 .btn-subscribe{

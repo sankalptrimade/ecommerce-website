@@ -11,15 +11,16 @@ const NewsletterComponent = () => {
         </div>
         <div className="newsletterform">
           <form>
-            <div className="mb-3">
-              <label for="exampleInputEmail1" className="form-label">
+            <div  className="mb-3">
+              <label htmlFor="exampleInputEmail1" className="form-label email-text">
                 Email
               </label>
               <input
                 type="email"
-                className="form-control "
-                id="exampleInputEmail1"
+                className="form-control email-text-input email"
+                id="email exampleInputEmail1"
                 aria-describedby="emailHelp"
+                required
               />
             </div>
             <div className="mb-3 form-check">
@@ -28,7 +29,7 @@ const NewsletterComponent = () => {
                 className="form-check-input"
                 id="exampleCheck1"
               />
-              <label className="form-check-label" for="exampleCheck1">
+              <label className="form-check-label" htmlFor="exampleCheck1">
                 Yes, subscribe me to your newsletter.
               </label>
             </div>
