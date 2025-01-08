@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-.about-heading{
+.about-heading {
     width: 100%;
     height: 190px;
 }
 
-.about-heading h1{
+.about-heading h1 {
     text-align: center;
     padding-top: 65px;
-    font-family: "Lato", serif;
     font-size: 45px;
+    font-family: "Lato", serif;
     font-weight: 600;
 }
 
-.about-image-text{
+.about-image-text {
     width: 100%;
     height: 50.6rem;
     display: flex;
@@ -22,11 +22,11 @@
     align-items: center;
 }
 
-.aboutImage img{
+.aboutImage img {
     width: 850px;
 }
 
-.aboutText{
+.aboutText {
     width: 850px;
     height: 673px;
     display: flex;
@@ -34,12 +34,129 @@
     align-items: center;
 }
 
-.about-para{
-    /* border: 1px solid green; */
+.about-para {
     line-height: 1.7;
     width: 412px;
     height: 434px;
-    font-family: "Lato", serif;
     font-size: 17px;
+    font-family: "Lato", serif;
     font-weight: 300;
+}
+
+.careers-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 16.2rem;
+}
+
+.careers-heading h1 {
+    font-size: 35px;
+    font-family: "Lato", serif;
+    font-weight: 600;
+}
+
+.careers-heading p {
+    font-size: 16px;
+    font-family: "Lato", serif;
+    font-weight: 300;
+}
+
+.careers-form{
+    margin-bottom: 55px;
+}
+
+.careers-form-parent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.careersForm form {
+    width: 53.7rem;
+    height: 24.3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.career-form-label {
+    width: 418px;
+    height: 28px;
+    font-size: 16px;
+    font-family: "Lato", serif;
+    font-weight: 400;
+}
+
+.career-form-label-optionset {
+    width: 640px;
+    font-size: 16px;
+    font-family: "Lato", serif;
+    font-weight: 300;
+}
+
+.career-form-input {
+    width: 418px;
+    height: 43px;
+    padding: 8px 0px;
+    padding-left: 12px;
+    font-size: 15px;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid gray;
+}
+
+.resume-input{
+    /* If you want to change except width in resume-input field you can change in "career-form-input" else want to change only for "resume-input" change in here*/
+    width: 640px;
+}
+
+.career-form-input:hover {
+    border-bottom: 2px solid black;
+}
+
+.career-form-input-optionset {
+    width: 418px;
+    height: 43px;
+    padding: 8px 0px;
+    padding-left: 12px;
+    font-size: 15px;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid gray;
+}
+
+.career-form-input-optionset:hover {
+    border-bottom: 2px solid black;
+}
+
+.career-form-input:focus, .career-form-input-optionset:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-bottom: 2px solid black;
+}
+
+.btn-careersForm {
+    width: 12rem;
+    height: 2.7rem;
+    border-radius: 24px;
+    background-color: #751FFF;
+    color: white;
+    border: none;
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 1rem;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn-careersForm:hover {
+    background-color: white;
+    color: #751FFF;
+    border: 1px solid #751FFF;
 }
