@@ -1,6 +1,7 @@
 import React from "react";
 import { LiaShippingFastSolid } from "react-icons/lia";
 import "./../styles/NavbarStyles.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -18,27 +19,26 @@ const Navbar = () => {
         <div className="navbar">
           <ul className="navbar-list d-flex justify-content-between">
             <li className="navbar-list-items link-underline link-underline-opacity-75">
-              {" "}
-              <a href="/"> About</a>
+              <Link to = "/"> Home</Link>
             </li>
             <li className="navbar-list-items link-underline link-underline-opacity-75">
-              {" "}
-              <a href="/"> Contact</a>
+              <Link to = "/about"> About</Link>
             </li>
             <li className="navbar-list-items link-underline link-underline-opacity-75">
-              {" "}
-              <a href="/"> Help Center</a>
+              <Link to = "/contact"> Contact</Link>
+            </li>
+            <li className="navbar-list-items link-underline link-underline-opacity-75">
+              <Link to = "/helpCenter"> Help Center</Link>
             </li>
             <li className="navbar-list-items">
-              <a href="/">
-                {" "}
+              <Link to = "/callUs">
                 <span className="link-underline link-underline-opacity-0">
                   Call Us
                 </span>
                 <span className="link-underline link-underline-opacity-75">
                   123-456-7890
                 </span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
