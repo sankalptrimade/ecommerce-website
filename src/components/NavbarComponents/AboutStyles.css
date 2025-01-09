@@ -64,7 +64,7 @@
     font-weight: 300;
 }
 
-.careers-form{
+.careers-form {
     margin-bottom: 55px;
 }
 
@@ -111,7 +111,7 @@
     border-bottom: 2px solid gray;
 }
 
-.resume-input{
+.resume-input {
     /* If you want to change except width in resume-input field you can change in "career-form-input" else want to change only for "resume-input" change in here*/
     width: 640px;
 }
@@ -135,7 +135,8 @@
     border-bottom: 2px solid black;
 }
 
-.career-form-input:focus, .career-form-input-optionset:focus {
+.career-form-input:focus,
+.career-form-input-optionset:focus {
     outline: none !important;
     box-shadow: none !important;
     border-bottom: 2px solid black;

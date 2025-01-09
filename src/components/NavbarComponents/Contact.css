@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.contact-heading {
+    width: 100%;
+    height: 190px;
+}
+
+.contact-heading h1 {
+    text-align: center;
+    padding-top: 65px;
+    font-size: 45px;
+    font-family: "Lato", serif;
+    font-weight: 700;
+}
+
+.outterBox-parent {
+    width: 100%;
+    height: 77rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailsBox {
+    width: 114rem;
+    height: 50.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.storeDetailsBox {
+    width: 45.6rem;
+    height: 50.3rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.storeDetails-InnerBox {
+    width: 13.1rem;
+    height: 31.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.timingsBox h6 {
+    font-size: 20px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 3rem;
+}
+
+.timings-list {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.timings-list-items {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+/* Its css styling for both heading of help form and location box */
+.locationBox h6,
+.helpForm-InnerBox h6 {
+    font-size: 20px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 3rem;
+}
+
+/* Its css styling for both para of help form and location box */
+.locationBox p,
+.helpForm-InnerBox p {
+    font-size: 16px;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.9;
+}
+
+.helpFormBox {
+    width: 68.3rem;
+    height: 50.3rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.helpForm-InnerBox {
+    width: 33rem;
+    height: 36rem;
+}
+
+.userDetailsHelpForm form {
+    margin-top: 45px;
+    width: 32rem;
+    height: 24.3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.help-form-label {
+    width: 242px;
+    height: 28px;
+    font-size: 16px;
+    font-family: "Lato", serif;
+    font-weight: 400;
+}
+
+.help-form-input {
+    width: 242px;
+    height: 43px;
+    padding: 8px 0px;
+    padding-left: 12px;
+    font-size: 15px;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid gray;
+}
+
+.textarea-input {
+    resize: none;
+    width: 511px;
+    height: 117px;
+}
+
+.help-form-input:hover {
+    border-bottom: 2px solid black;
+}
+
+.help-form-input:focus,
+.help-form-input-optionset:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-bottom: 2px solid black;
+}
+
+.btn-helpForm {
+    width: 15rem;
+    height: 2.7rem;
+    border-radius: 24px;
+    background-color: #751FFF;
+    color: white;
+    border: none;
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 1rem;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn-helpForm:hover {
+    background-color: white;
+    color: #751FFF;
+    border: 1px solid #751FFF;
+}
