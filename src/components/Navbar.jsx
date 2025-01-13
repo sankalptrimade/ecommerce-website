@@ -30,7 +30,7 @@ const Navbar = () => {
             <li className="navbar-list-items link-underline link-underline-opacity-75">
               <Link to = "/helpCenter"> Help Center</Link>
             </li>
-            <li className="navbar-list-items">
+            {/* <li className="navbar-list-items">
               <Link to = "/callUs">
                 <span className="link-underline link-underline-opacity-0">
                   Call Us
@@ -39,7 +39,7 @@ const Navbar = () => {
                   123-456-7890
                 </span>
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

@@ -1,0 +1,59 @@
+.accordion-component{
+    width: 100%;
+    height: 40rem;
+    /* border: 2px solid red; */
+}
+
+.helpCenter-heading {
+    width: 100%;
+    height: 190px;
+}
+
+.helpCenter-heading h1 {
+    text-align: center;
+    padding-top: 65px;
+    font-size: 45px;
+    font-family: "Lato", serif;
+    font-weight: 700;
+}
+
+.helpCenter-heading p {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 25px;
+    font-family: "Lato", serif;
+    font-weight: 700;
+}
+
+.accordion-optionset{
+    width: 100%;
+    height: 4rem;
+}
+
+.optionset-list{
+    display: flex;
+    list-style: none;
+    width: 13rem;
+    height: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+.optionset-list-items{
+    transition: font-size .5s, color .5s;
+}
+
+.optionset-list-items:hover{
+    cursor: pointer;
+    color: #751FFF;
+}
+
+.optionset-list-items.active-tab {
+    font-size: 18px;
+    color: #751FFF;
+}
+
+
