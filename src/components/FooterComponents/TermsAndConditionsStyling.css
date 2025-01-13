@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.termsConditions-heading {
+    width: 100%;
+    height: 190px;
+}
+
+.termsConditions-heading h1 {
+    text-align: center;
+    padding-top: 65px;
+    font-size: 45px;
+    font-family: "Lato", serif;
+    font-weight: 700;
+}
+
+.terms-conditions-details-box{
+    width: 100%;
+    height: 100rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-box{
+    width: 39rem;
+    height: 20.5rem;
+    margin-bottom: 5rem;
+    /* border: 2px solid; */
+}
+
+.details-box h3{
+    margin-bottom: 3rem;
+    font-size: 30px;
+    font-family: "Lato", serif;
+    font-weight: 700;
+}
+
+.details-box p{
+    font-size: 17px;
+    font-family: "Lato", serif;
+    font-weight: 300;
+}
+
+.payment-policy{
+    width: 39rem;
+    height: 10.5rem;
+    /* margin-bottom: 5rem; */
+    /* border: 2px solid; */
+}
+
+.payment-policy h3{
+    margin-bottom: 3rem;
+    font-size: 30px;
+    font-family: "Lato", serif;
+    font-weight: 700;
+}
+
+.payment-policy p{
+    font-size: 17px;
+    font-family: "Lato", serif;
+    font-weight: 300;
+}
