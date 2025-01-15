@@ -1,0 +1,28 @@
+
+
+.showProducts-parent{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #E8E8E8;
+}
+
+.browseComponent-child{
+    width: 16.2rem;
+}
+
+.productComponent-child{
+    width: 102.6rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.productHeading{
+    width: 154px;
+    height: 80px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}

@@ -1,0 +1,29 @@
+.browse-heading{
+    width: 16.2rem;
+    height: 4rem;
+}
+
+.browse-heading h3{
+    padding: 23px 35px;
+}
+
+.browseByCategory-list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 35px;
+}
+
+.browseByCategory-list-items{
+    margin-bottom: 30px;
+}
+
+.browseByCategory-list-items a{
+    text-decoration: none;
+    color: black;
+}
+
+.browseByCategory-list-items a:hover{
+    text-decoration: underline;
+    color: rgb(65, 65, 65);
+}
