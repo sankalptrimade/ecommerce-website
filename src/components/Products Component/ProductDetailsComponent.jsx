@@ -3,52 +3,77 @@ import "./ProductDetailsStyling.css";
 import { useParams } from "react-router-dom";
 
 const ProductDetailsComponent = () => {
+  const { id } = useParams();
+  const [product, setProduct] = useState(null);
+  const [quantity, setQuantity] = useState(1);
 
-    const { id } = useParams();
-    const [product, setProduct] = useState([]);
-    const getSingleProductDetails = async() => {
-        const url = `https://dummyjson.com/products/${id}`;
-        let data = await fetch(url);
-        let parsedData = await data.json();
-        setProduct(parsedData);
+  const getSingleProductDetails = async () => {
+    try {
+      const url = `https://dummyjson.com/products/${id}`;
+      const response = await fetch(url);
+      const parsedData = await response.json();
+      setProduct(parsedData);
+      console.log(parsedData);
+    } catch (error) {
+      console.error("Error fetching product details:", error);
     }
+  };
 
-    const [quantity, setQuantity] = useState(1);
+  const handleQuantityChange = (event) => {
+    setQuantity(event.target.value);
+  };
 
-    const handleQuantityChange = (event) => {
-      setQuantity(event.target.value);
-    };
+  useEffect(() => {
+    getSingleProductDetails();
+  }, [id]);
 
-    useEffect(() => {
-        getSingleProductDetails();
-    }, [id])
+  if (!product) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div>
-      <div className="showProductDetailsComponent-parent">
-        <div className="product-img">
-          <img src="" alt="" />
-          <p>I'm a product description. This is a great place to "sell" your product and grab buyers' attention. Describe your product clearly and concisely. Use unique keywords. Write your own description instead of using manufacturers' copy.</p>
-          <p>Product Description: {product.description}</p>
-        </div>
-        <div className="product-info">
-          <h1>{product.title}</h1>
-          <h6>SKU</h6>
-          <h4>Price</h4>
-          <div className="mb-3">
-            <label htmlFor="quantityInput" className="form-label">
-              Quantity
-            </label>
-            <input
-              type="number"
-              className="form-control"
-              id="quantityInput"
-              value={quantity}
-              onChange={handleQuantityChange}
-            />
-          </div>
-          <a href="#" className="btn btn-primary">Go somewhere</a>
-        </div>
+      <div className="showProductDetailsComponent-parent d-flex align-items-center">
+      <div className="showProducts-child container">
+  <div className="product-details-container">
+    <div className="product-img">
+      {product.images?.length > 0 ? (
+        <img
+          src={product.images[0]}
+          alt={product.title}
+          className="product-image"
+          style={{width:"500px", height:"500px", objectFit:"contain"}}
+        />
+      ) : (
+        <div className="no-image">No Image Available</div>
+      )}
+    </div>
+    <div className="product-info">
+      <h1 className="product-title">{product.title}</h1>
+      <p className="product-brand">Brand: <span>{product.brand}</span></p>
+      <p className="product-price">Price: &#36;{product.price}</p>
+      <p className="product-availability">
+        Availability: <span>{product.availabilityStatus}</span>
+      </p>
+      <p className="product-description">{product.description}</p>
+      <div className="quantity-container">
+        <label htmlFor="quantityInput" className="quantity-label">
+          Quantity
+        </label>
+        <input
+          type="number"
+          className="quantity-input"
+          id="quantityInput"
+          value={quantity}
+          onChange={handleQuantityChange}
+          min={product.minimumOrderQuantity || 1}
+        />
+      </div>
+      <button className="btn-add-to-cart">Buy Now</button>
+    </div>
+  </div>
+</div>
+
       </div>
     </div>
   );
