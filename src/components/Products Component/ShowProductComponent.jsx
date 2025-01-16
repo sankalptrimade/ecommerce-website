@@ -3,11 +3,9 @@ import "./ShowProductsStyling.css";
 import BrowseComponent from "./BrowseComponent";
 import ProductComponent from "./ProductComponent";
 import LoadingBar from "react-top-loading-bar";
-// import tablet from "./../../images/tabletImg.png";
 
 const ShowProductComponent = (props) => {
   const [products, setProducts] = useState([]);
-  // const [loading, setLoading] = useState(true);
   const [total, setTotal] = useState(0);
   const [progress, setProgress] = useState(0);
 
@@ -15,7 +13,6 @@ const ShowProductComponent = (props) => {
     setProgress(0);
     const url = `https://dummyjson.com/products/category/${props.category}`;
     setProgress(20);
-    // setLoading(true);
     let data = await fetch(url);
     setProgress(40);
     let parsedData = await data.json();
@@ -24,8 +21,6 @@ const ShowProductComponent = (props) => {
     setProducts(parsedData.products);
     setProgress(80);
     setTotal(parsedData.total);
-    // setProgress(90);
-    // setLoading(false);
     setProgress(100);
   };
 
@@ -46,9 +41,11 @@ const ShowProductComponent = (props) => {
             <p>{total} products</p>
           </div>
         <div className="productComponent-child container">
-          {products.map((element) => (
+          {products.map((element,index) => (
             <ProductComponent
-              key={element.id}
+              key={index}
+              id={element.id}
+              category={element.category}
               title={element.title}
               description={element.description}
               price={element.price}
